@@ -31,7 +31,6 @@ for i in range(n-7):
 
         if swapTime > (64-swapTime):
             swapTime = 64-swapTime
-
         if swapTime < result:
             result = swapTime
 
