@@ -20,12 +20,12 @@ for i in range(n):
     table.append(input())
     table[i] = list(table[i])
 
-for i in range(n-8):
-    for j in range(m-8):
+for i in range(n-7):
+    for j in range(m-7):
 
-        swapTime = 0
         for k in range(8):
             for l in range(8):
+
                 if table[i+k][j+l] != refTable[k][l]:
                     swapTime+=1
 
@@ -34,5 +34,7 @@ for i in range(n-8):
 
         if swapTime < result:
             result = swapTime
+
+        swapTime = 0
 
 print(result)
