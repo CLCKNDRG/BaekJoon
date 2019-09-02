@@ -1,7 +1,11 @@
-a = []
-a = a.append(int(input()))
+a = int(input())
+
+b = []
 
 for i in range(a):
-    a.append(int(input()))
+    b.append(int(input()))
 
-print(a)
+b.sort()
+
+for i in range(len(b)):
+    print(b[i])
