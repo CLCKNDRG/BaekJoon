@@ -1,3 +1,5 @@
+from sys import stdin, stdout
+
 def insertionSort(x):
     for size in range(1, len(x)):
         val = x[size]
@@ -7,9 +9,9 @@ def insertionSort(x):
             i -= 1
         x[i] = val
 
-a = int(input())
+a = int((stdin.read()))
 b = []
 
 for i in range (a):
-    b.append(int(input()))
+    b.append(int(stdin.read()))
 
